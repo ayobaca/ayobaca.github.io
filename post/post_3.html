@@ -12,12 +12,8 @@
         <!-- Google fonts-->
         <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css" />
-        <link rel="stylesheet"
-      href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/styles/default.min.css">
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="../css/styles.css" rel="stylesheet" />
-        <link href="../css/blackboard.css" rel="stylesheet" />
-        
     </head>
     <body>
         <!-- Navigation-->
@@ -27,12 +23,12 @@
             </div>
         </nav>
         <!-- Page Header-->
-        <header class="masthead" style="background-image: url('../assets/img/img_video.jpg')">
+        <header class="masthead" style="background-image: url('../assets/img/html-audio.png')">
             <div class="container position-relative px-4 px-lg-5">
                 <div class="row gx-4 gx-lg-5 justify-content-center">
                     <div class="col-md-10 col-lg-8 col-xl-7">
                         <div class="post-heading">
-                            <h1>Memutar musik dengan HTML</h1>
+                            <h1>Belajat HTML membuat audio</h1>
                             <span class="meta">
                                 Posted by
                                 <a href="#!">Yohanes Hari</a>
@@ -48,39 +44,40 @@
             <div class="container px-4 px-lg-5">
                 <div class="row gx-4 gx-lg-5 justify-content-center">
                     <div class="col-md-10 col-lg-8 col-xl-7">
-                        <p>Mendengarkan musik dapat memiliki efek yang sangat menenangkan buat pikiran dan tubuh, terutama musik yang berirama lambat dan menenangkan. Jenis musik seperti ini memiliki efek positif pada fungsi fisiologis yang bisa memperlambat denyut nadi dan detak jantung.</p>
-                        <p>Ya, itu adalah efek positif saat Anda mendengarkan musik. tapi kali ini mimin bukan ingin membahas bagaiman pengaruh musik terhadap manusia. hehe, mimin bukan dokter ya temen - temen :).</p>
-                        <p>Yang ingin mimin share ke temen - temen bagaimana cara mendengarkan musik dengan HTML. Jadi temen - temen bisa sedikit belajar koding. Ok langsung aja kita ke materinya cekidud.</p>
+                        <p>Beberapa website seperti website musik, penyedia lagu-lagu online, kursus online ataupun yang lainnya, tentunya perlu memasukkan file – file audio sebagai konten dari website tersebut. Secara umum, ada tiga jenis file audio yang bisa dimainkan yaitu audio digital, file music dan text to speech. Selain itu, kita juga bisa menambahkan inline audio pada sebuah website.
+
+                            Inline audio adalah suara yang disertakan dalam suatu halaman web atau sebagai bagian dari suatu halaman web dimana suara tersebut akan dimainkan saat browser diload. Tetapi sebelum Anda memasang inline audio pada website, terlebih dahulu perhatikan apakah penggunaan inline audio tersebut tidak mengganggu pengunjung untuk membaca konten website. Anda sebaiknya memasang inline audio pada halaman web yang diharapkan oleh pengunjung untuk mendengar suara..</p>
                         <!-- channel ke 1 -->
-                        <h2 class="section-heading">Persiapan</h2>
-                        <p>Untuk persiapannya cukup menyiapkan text editor. Temen - temen bisa pakai sublime text, visual studio code, notepad++ atau notepad biasa bawaan windows.</p>
-                        <p>Buat file baru lalu beri nama index.html, selajutnya copas kode berikut dan simpan. kemudian buka file index.html kamu.</p>
-                        <pre>
-                            <code data-language="html">
-                            &lt;!DOCTYPE html&gt;
-                            &lt;html lang="en"&gt;
-                            &lt;head&gt;
-                              &lt;meta charset="UTF-8"&gt;
-                              &lt;title>Mendengarkan Musik di HTML&lt;/title&gt;
-                            &lt;/head&gt;
-                            &lt;body&gt;
-                              &lt;audio controls&gt;
-                                &lt;source src="ringtone.mp3" type="audio/mpeg"&gt;
-                                Browsermu tidak mendukung tag audio
-                              &lt;/audio&gt;
-                            &lt;/body&gt;
-                            &lt;/html&gt;
+                        <h2 class="section-heading">Elemen audio</h2>
+                        <p>Sebelum adanya HTML 5, audio di HTML ditambahkan dengan program eksternal seperti flash player.
 
-                        </code>
-                            </pre>
+                            Namun, kini HTML sudah punya tag sendiri yakni <audio>.
+                            
+                            Tag <audio> adalah tag untuk membuat audio player. Lalu kita bisa memberikan file audio yang akan diputar dengan tag <source>.</p>
+                            <p>
+                                <img src="/assets/img/tag-audio.png" />
+                                  </p>
+                            <audio controls>
+                                <source src="https://github.com/petanikode/belajar-html/raw/master/audio/Ngoni.mp3" type="audio/mpeg">
+                            </audio>
+                            <h2 class="section-heading">Atribut untuk Audio</h2>
+                        <p>SAtribut ini berfungsi untuk mengaktifkan tombol kontrol seperti tombol play, pause, stop, scroll, dan volume) Jika bernilai true, maka nilainya boleh tidak diisi. Nilai true artinya, kita akan mengaktifkan tombol kontrol dan jika nilainya false maka artinya tombol kontrol tidak diaktifkan..</p>
+                            <h2 class="section-heading">autoplay</h2>
+                            <p>Atribut ini berfungsi untuk memutar audio secara otomatis. Nilai yang bisa diberikan pada atribut ini adalah true dan false.
 
-                        <p>Nah jika sudah, maka akan tampil pemutar musik seperti ini.</p>
-                        <audio controls>
-                            <source src="../assets/media/ringtone.mp3" type="audio/mpeg">
-                            Browsermu tidak mendukung tag audio
-                          </audio>
+                                Nilai true artinya kita akan memutar audio secara otomatis, dan false artinya audio tidak akan diputar secara otomatis.</p>
+                            <h2 class="section-heading">Loop</h2>
+                                <p>Atribut loop berfungsi untuk mengulang-ulang pemutaran audio. Ini seperti repeat one. Nilai yang bisa diberikan adalah true dan false.</p>
+                                <h2 class="section-heading">muted</h2>
+                                <p>Atribut ini berfungsi untuk mensenyapkan audio. Nilai yang bisa diberikan adalah true dan false.</p>
+                                <h2 class="section-heading">Audio Sebagai Background</h2>
+                                <p>Audio kadang sering digunakan sebagai background. Biasanya menggunakan musik.
 
-                          <p>Gimana keren kan, sekian tutorial cara memutar musik dengan html. tunggu tutorial mimin lainnya yah :) . </p>
+                                    Tujuan menambahkan background agar menambah kesan tertentu pada web. Misalkan, ingin membuat pengunjung merasa santai.. maka kita bisa memutar audio musik yang santai.
+                                    
+                                    Cara membuat musk sebagai background adalah dengan menambahkan atribut autoplay, loop, dan menghilangkan kontrol (hidden).</p>
+
+
                     </div>
                 </div>
             </div>
@@ -144,12 +141,9 @@
                 </div>
             </div>
         </footer>
-        
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
         <script src="../js/scripts.js"></script>
-        <script src="../js/rainbow.js"></script>
-        <!-- <script src="../js/generic.js"></script> -->
-        <script src="../js/html.js"></script>
-        <!-- <script src="../js/css.js"></script>
-        <script src="../js/javascript.js"></script> -->
     </body>
 </html>
