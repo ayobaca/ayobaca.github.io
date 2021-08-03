@@ -1,6 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <!-- 
+            Tugas Kelompok 6 Website Edukasi - AyoBaca
+            Sona Setiana 200401072032
+            Muhammad Arum 200401010169
+            Yohanes Hari Widiastomo 200401010176
+            Andi Prasetyo 200401010165 
+            link: https://ayobaca.github.io/
+        -->
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
@@ -14,7 +22,12 @@
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="../css/styles.css" rel="stylesheet" />
-        <link href="../css/blackboard.css" rel="stylesheet" />
+        <style>
+            pre,code {
+                background-color: gray;
+                color: white;
+            }
+        </style>
     </head>
     <body>
         <!-- Navigation-->
@@ -58,14 +71,14 @@
                         <h2 class="section-heading">Tag untuk Membuat Tabel di HTML</h2>
                         <p>Ada beberapa tag yang harus diingat untuk membuat tabel di HTML:</p>
                         <ol>
-                            <li>Tag &lt;table&gt; untuk membungkus tabelnya</li>
-                            <li>Tag &lt;thead&gt; untuk membungkus bagian kepala tabel</li>
-                            <li>Tag &lt;tbody&gt; untuk membungkus bagian body dari tabel</li>
-                            <li>Tag &lt;tr&gt; (tabel row) untuk membuat baris</li>
-                            <li>Tag &lt;th&gt; (table head) untuk membuat judul pada header</li>
-                            <li>Tag &lt;td&gt; (table data) untuk membuat sel</li>
+                            <li><mark>Tag &lt;table&gt;</mark> untuk membungkus tabelnya</li>
+                            <li><mark>Tag &lt;thead&gt;</mark> untuk membungkus bagian kepala tabel</li>
+                            <li><mark>Tag &lt;tbody&gt;</mark> untuk membungkus bagian body dari tabel</li>
+                            <li><mark>Tag &lt;tr&gt;</mark> (tabel row) untuk membuat baris</li>
+                            <li><mark>Tag &lt;th&gt;</mark> (table head) untuk membuat judul pada header</li>
+                            <li><mark>Tag &lt;td&gt;</mark> (table data) untuk membuat sel</li>
                         </ol>
-                        <p>Tag yang paling penting untuk diingat adalah tag &lt;table&gt;, &lt;tr&gt;, dan &lt;td&gt;. Sementara tag yang lain adalah tambahan (opsional), boleh digunakan boleh tidak.</p>
+                        <p>Tag yang paling penting untuk diingat adalah <mark>tag &lt;table&gt;, &lt;tr&gt;, dan &lt;td&gt;</mark>. Sementara tag yang lain adalah tambahan (opsional), boleh digunakan boleh tidak.</p>
                         <p>Mari kita lihat contohnya:</p>
 
                         <pre>
@@ -105,7 +118,7 @@
                             </tr>
                         </table>
                         <p>Kok tidak ada garisnya? Iya, karena kita tidak menambahkan atribut border pada tabelnya.</p>
-                        <p>Agar Tabelnya memiliki garis, silahkan tambahkan atribut border="1" di dalam tag &lt;table&gt;.</p>
+                        <p>Agar Tabelnya memiliki garis, silahkan tambahkan <mark>atribut border="1"</mark> di dalam tag &lt;table&gt;.</p>
                         <p>Sehingga akan menjadi seperti ini:</p>
                         <pre>
                             <code data-language="html">
@@ -145,7 +158,7 @@
                         </table>
                         
                         <h2 class="section-heading">Mengatur Jarak Sel dengan Cellpadding</h2>
-                        <p>Atribut cellpadding adalah atribut untuk mengatur jarak teks dengan garis di dalam sel. Atribut ini dapat kita berikan kepada tag &lt;table&gt;</p>
+                        <p>Atribut <b>cellpadding</b> adalah atribut untuk mengatur jarak teks dengan garis di dalam sel. Atribut ini dapat kita berikan kepada tag &lt;table&gt;</p>
                         <p>Contoh:</p>
                         <pre>
                             <code data-language="html">
@@ -185,7 +198,7 @@
 
                         
                         <h2 class="section-heading">Menambahkan Warna pada Sel dan Baris</h2>
-                        <p>Untuk menambahkan warna pada sel dan baris, kita bisa menambahkan atribut bgcolor di dalam tag &lt;td&gt; (untuk sel) atau &lt;tr&gt; (untuk baris).</p>
+                        <p>Untuk menambahkan warna pada <b>sel</b> dan <b>baris</b>, kita bisa menambahkan atribut <mark>bgcolor di dalam tag &lt;td&gt; (untuk sel) atau &lt;tr&gt; (untuk baris)</mark>.</p>
                         <p>Contoh:</p>
                         <pre>
                             <code data-language="html">
@@ -224,12 +237,12 @@
                         </table>
                         
                         <h2 class="section-heading">Menggabungkan Sel Tabel</h2>
-                        <p>Atribut yang digunakan untuk menggabungkan sel tabel adalah rowspan dan colspan:</p>
+                        <p>Atribut yang digunakan untuk menggabungkan sel tabel adalah <mark>rowspan dan colspan</mark></p>
                         <ul>
-                            <li>rowspan untuk menggbungkan baris;</li>
-                            <li>colspan untuk menggabungkan kolom.</li>
+                            <li><b>rowspan</b> untuk menggbungkan baris;</li>
+                            <li><b>colspan</b> untuk menggabungkan kolom.</li>
                         </ul>
-                        <p>Atribut ini bisa kita berikan kepada tag &lt;tr&gt; atau &lt;th&gt;.</p>
+                        <p>Atribut ini bisa kita berikan kepada tag <mark>&lt;tr&gt; atau &lt;th&gt;</mark>.</p>
                         <img src="https://www.petanikode.com/img/html/tabel/rowspan-colspan.png" alt="rowspan-colspan.png">
                         <p>Contoh:</p>
                         <pre>
@@ -311,7 +324,7 @@
                         
                         
                         <h2 class="section-heading">Menyisipkan Elemen yang Lain ke dalam Sel</h2>
-                        <p>Di salam sel &lt;td&gt; dan &lt;th&gt;, kita bisa menyisipkan elemen HTML yang lain, seperti gambar, link, video, list, dsb.</p>
+                        <p>Di salam <b>sel</b> <mark>&lt;td&gt; dan &lt;th&gt;</mark>, kita bisa menyisipkan elemen HTML yang lain, seperti <u>gambar, link, video, list, dsb</u>.</p>
                         <p>Contoh:</p>
                         <pre>
                             <code data-language="html">
@@ -421,7 +434,7 @@
                         </a>
                         <p class="post-meta">
                             Posted by
-                            <a href="#!">Muhammad Ayun</a>
+                            <a href="#!">Muhammad Arum</a>
                             on Juli 31, 2021
                         </p>
                     </div>
@@ -456,7 +469,5 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
         <script src="../js/scripts.js"></script>
-        <script src="../js/rainbow.js"></script>
-        <script src="../js/html.js"></script>
     </body>
 </html>
