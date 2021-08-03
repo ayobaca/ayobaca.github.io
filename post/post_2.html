@@ -14,6 +14,7 @@
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="../css/styles.css" rel="stylesheet" />
+        <link href="../css/blackboard.css" rel="stylesheet" />
     </head>
     <body>
         <!-- Navigation-->
@@ -23,16 +24,16 @@
             </div>
         </nav>
         <!-- Page Header-->
-        <header class="masthead" style="background-image: url('../assets/img/youtube-seo.jpg')">
+        <header class="masthead" style="background-image: url('../assets/img/img-html.png')">
             <div class="container position-relative px-4 px-lg-5">
                 <div class="row gx-4 gx-lg-5 justify-content-center">
                     <div class="col-md-10 col-lg-8 col-xl-7">
                         <div class="post-heading">
-                            <h1>5 channel youtube buat kamu yang ingin jago coding</h1>
+                            <h1>Belajar HTML Membuat Tabel</h1>
                             <span class="meta">
                                 Posted by
-                                <a href="#!">Sona Setiana</a>
-                                on Juli 28, 2021
+                                <a href="#!">Andi Prasetyo</a>
+                                on Juli 30, 2021
                             </span>
                         </div>
                     </div>
@@ -44,43 +45,350 @@
             <div class="container px-4 px-lg-5">
                 <div class="row gx-4 gx-lg-5 justify-content-center">
                     <div class="col-md-10 col-lg-8 col-xl-7">
-                        <p>Buat kamu yang kepingin bisa koding dan bahkan sampai ingin menjadi jawaranya koding? Hmmm, gampang banget. Di era serba digital sekarang ini banyak banget situs - situs yang memberikan layanan belajar koding secara online. Ada yang gratis dan juga berbayar. Kali ini mimin mau kasih 5 channel youtube buat temen-temen yang ingin belajar koding.</p>
-                        <!-- channel ke 1 -->
-                        <h2 class="section-heading">Programmer Zaman Now</h2>
-                        <p>Channel yang satu ini komplit banget. Temen - temen bisa belajar banyak bahasa pemrograman, mulai dari yang dasar sampai yang advance. Gak cuma bahasa pemrograman saja yang dibahas di channel ini membahas juga seputar code interview. Jadi kita bisa tau nih apa aja sih yang dibutuhkan saat interview untuk jadi programmer profesional.</p>
+                        <p>Untuk tutorial kali ini kita akan membuat tabel pada html. Tabel terdiri dari 4 unsur:</p>
+                        <ol>
+                            <li>Baris</li>
+                            <li>Kolom</li>
+                            <li>Sel</li>
+                            <li>Garis</li>
+                        </ol>
+                        <img src="https://www.petanikode.com/img/html/tabel/tabel.png" alt="tabel.png" >
+                        <p>Lalu, bagaimana cara membuat tabel di HTML?</p>
+                        <p>Kita bisa membuatnya dengan beberapa tag yang sudah disediakan di HTML.</p>
+                        <h2 class="section-heading">Tag untuk Membuat Tabel di HTML</h2>
+                        <p>Ada beberapa tag yang harus diingat untuk membuat tabel di HTML:</p>
+                        <ol>
+                            <li>Tag &lt;table&gt; untuk membungkus tabelnya</li>
+                            <li>Tag &lt;thead&gt; untuk membungkus bagian kepala tabel</li>
+                            <li>Tag &lt;tbody&gt; untuk membungkus bagian body dari tabel</li>
+                            <li>Tag &lt;tr&gt; (tabel row) untuk membuat baris</li>
+                            <li>Tag &lt;th&gt; (table head) untuk membuat judul pada header</li>
+                            <li>Tag &lt;td&gt; (table data) untuk membuat sel</li>
+                        </ol>
+                        <p>Tag yang paling penting untuk diingat adalah tag &lt;table&gt;, &lt;tr&gt;, dan &lt;td&gt;. Sementara tag yang lain adalah tambahan (opsional), boleh digunakan boleh tidak.</p>
+                        <p>Mari kita lihat contohnya:</p>
+
+                        <pre>
+                            <code data-language="html">
+                                &lt;!DOCTYPE html&gt;
+                                &lt;html lang="en"&gt;
+                                &lt;head&gt;
+                                &lt;meta charset="UTF-8"&gt;
+                                &lt;title>Membuat tabel di HTML&lt;/title&gt;
+                                &lt;/head&gt;
+                                &lt;body&gt;
+                                &lt;table&gt;
+                                    &lt;tr&gt;
+                                        &lt;td&gt;Baris 1 kolom 1&lt;/td&gt;
+                                        &lt;td&gt;baris 1 kolom 2&lt;/td&gt;
+                                    &lt;/tr&gt;
+                                    &lt;tr&gt;
+                                        &lt;td&gt;Baris 2 kolom 1&lt;/td&gt;
+                                        &lt;td&gt;baris 2 kolom 2&lt;/td&gt;
+                                    &lt;/tr&gt;
+                                &lt;/table&gt;
+                                &lt;/body&gt;
+                                &lt;/html&gt;
+
+                            </code>
+                        </pre>
+
+                        <p>Hasilnya:</p>
                         <table>
-                            <thead>
-                                <tr>
-                                    <th>Nama</th>
-                                    <th>Alamat</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                <td>Sona Setiana</td>
-                                <td>Jln. masjid lio depok</td>
-                                </tr>
-                            </tbody>
+                            <tr>
+                                <td>Baris 1 kolom 1</td>
+                                <td>baris 1 kolom 2</td>
+                            </tr>
+                            <tr>
+                                <td>Baris 2 kolom 1</td>
+                                <td>baris 2 kolom 2</td>
+                            </tr>
                         </table>
-                        <!-- channel ke 2 -->
-                        <h2 class="section-heading">Erico Darmawan Handoyo</h2>
-                        <p>Channel yang ke dua ada Erico Darmawan Handoyo. Abang jagoan koding yang satu ini membagi pengalaman cara membuat aplikasi multiplatform. Temen - temen akan di perkenalan dengan bahasa pemrograman baru yaitu Dart dan Flutter sebagai frameworknya. Nah, apa sih flutter? Flutter adalah framework untuk membangun sebuah aplikasi berbasis multiplatform dimana temen-temen bisa membuat aplikasi mobile, web dan desktop dalam 1 code base. Artinya, temen-temen gak perlu repot-repot lagi belajar banyak bahasa pemrograman dan framework cukup belajar Dart sebagai bahasa pemrogramannya dan Flutter sebagai frameworknya.</p>
-                        <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/SoX3cel4LRM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        <!-- channel ke 3 -->
-                        <h2 class="section-heading">Web Programming UNPAS</h2>
-                        <p>Next untuk channel selanjutnya ada channel Web Programming UNPAS. Kali ini kita belajar langsung sama pak dosen. Jadi kaya kuliah online ya hehe. Di channel ini temen - temen lebih difokuskan untuk belajar pemrograman web. Sebenarnya banyak yah channel - channel youtube yang ngebahas pemrograman web. Terus apa sih bedanya channel Web Programming UNPAS dengan channel lain? Yaps, di channel ini penjelasannya mudah di pahami dan materinya benar - benar dibuat secara matang. Jadi buat temen yang masih kesulitan memahami bahasa pemrograman bisa nih belajar di channel ini.</p>
-                        <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/c_fRtpQf4Oc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        <!-- channel ke 4 -->
-                        <h2 class="section-heading">Kelas Terbuka</h2>
-                        <p>Nah untuk temen - temen yang mau belajar bahasa pemrograman C, C++, Java dan Python. Temen - temen wajib ikutin channel ini. </p>
-                        <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/m3WFRMG61Dg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        <!-- channel ke 5 -->
-                        <h2 class="section-heading">Sekolah Koding</h2>
-                        <p>Terakhir ada Sekolah Koding. channel yang juga gak kalah mantepnya buat diikutin dan dipelajari bagi temen - temen yang serius ingin menggeluti bidang IT khusunya menjadi seorang profesional programmer.</p>
-                        <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/cY7idHY36s8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <p>Kok tidak ada garisnya? Iya, karena kita tidak menambahkan atribut border pada tabelnya.</p>
+                        <p>Agar Tabelnya memiliki garis, silahkan tambahkan atribut border="1" di dalam tag &lt;table&gt;.</p>
+                        <p>Sehingga akan menjadi seperti ini:</p>
+                        <pre>
+                            <code data-language="html">
+                                &lt;!DOCTYPE html&gt;
+                                &lt;html lang="en"&gt;
+                                &lt;head&gt;
+                                &lt;meta charset="UTF-8"&gt;
+                                &lt;title>Membuat tabel di HTML&lt;/title&gt;
+                                &lt;/head&gt;
+                                &lt;body&gt;
+                                &lt;table border="1"&gt;
+                                &lt;tr&gt;
+                                    &lt;td&gt;Baris 1 kolom 1&lt;/td&gt;
+                                    &lt;td&gt;baris 1 kolom 2&lt;/td&gt;
+                                &lt;/tr&gt;
+                                &lt;tr&gt;
+                                    &lt;td&gt;Baris 2 kolom 1&lt;/td&gt;
+                                    &lt;td&gt;baris 2 kolom 2&lt;/td&gt;
+                                &lt;/tr&gt;
+                                &lt;/table&gt;
+                                &lt;/body&gt;
+                                &lt;/html&gt;
+
+                            </code>
+                        </pre>
+                        <p>Nilai "1" pada atribut border adalah ukuran garisnya. Semakin besar ukurannya, maka akan semakin besar pula ukuran garisnya.Nilai "1" adalah ukuran garis yang palng kecil.</p>
+                        <p>Hasilnya akan sepert ini:</p>
+                        <table border="1">
+                            <tr>
+                                <td>Baris 1 kolom 1</td>
+                                <td>baris 1 kolom 2</td>
+                            </tr>
+                            <tr>
+                                <td>Baris 2 kolom 1</td>
+                                <td>baris 2 kolom 2</td>
+                            </tr>
+                        </table>
                         
-                        <p>Sebenarnya banyak sekali channel - channel youtube yang ngebahas seputar pemrograman untuk temen - temen ikuti. Disini mimin hanya memberikan 5 yang menurut mimin channel yang serius dibuat khusus untuk belajar pemrograman. Sekian pembahasan kali ini, semoga bermanfaat. See you and cahyoo :) salam koding</p>
+                        <h2 class="section-heading">Mengatur Jarak Sel dengan Cellpadding</h2>
+                        <p>Atribut cellpadding adalah atribut untuk mengatur jarak teks dengan garis di dalam sel. Atribut ini dapat kita berikan kepada tag &lt;table&gt;</p>
+                        <p>Contoh:</p>
+                        <pre>
+                            <code data-language="html">
+                                &lt;!DOCTYPE html&gt;
+                                &lt;html lang="en"&gt;
+                                &lt;head&gt;
+                                &lt;meta charset="UTF-8"&gt;
+                                &lt;title>Membuat tabel di HTML&lt;/title&gt;
+                                &lt;/head&gt;
+                                &lt;body&gt;
+                                &lt;table border="1" cellpadding="10"&gt;
+                                    &lt;tr&gt;
+                                        &lt;td&gt;Baris 1 kolom 1&lt;/td&gt;
+                                        &lt;td&gt;baris 1 kolom 2&lt;/td&gt;
+                                    &lt;/tr&gt;
+                                    &lt;tr&gt;
+                                        &lt;td&gt;Baris 2 kolom 1&lt;/td&gt;
+                                        &lt;td&gt;baris 2 kolom 2&lt;/td&gt;
+                                    &lt;/tr&gt;
+                                &lt;/table&gt;
+                                &lt;/body&gt;
+                                &lt;/html&gt;
+
+                            </code>
+                        </pre>
+                        <p>Hasilnya:</p>
+                        <table border="1" cellpadding="10">
+                            <tr>
+                                <td>Baris 1 kolom 1</td>
+                                <td>baris 1 kolom 2</td>
+                            </tr>
+                            <tr>
+                                <td>Baris 2 kolom 1</td>
+                                <td>baris 2 kolom 2</td>
+                            </tr>
+                        </table>
+
                         
+                        <h2 class="section-heading">Menambahkan Warna pada Sel dan Baris</h2>
+                        <p>Untuk menambahkan warna pada sel dan baris, kita bisa menambahkan atribut bgcolor di dalam tag &lt;td&gt; (untuk sel) atau &lt;tr&gt; (untuk baris).</p>
+                        <p>Contoh:</p>
+                        <pre>
+                            <code data-language="html">
+                                &lt;!DOCTYPE html&gt;
+                                &lt;html lang="en"&gt;
+                                &lt;head&gt;
+                                &lt;meta charset="UTF-8"&gt;
+                                &lt;title>Membuat tabel di HTML&lt;/title&gt;
+                                &lt;/head&gt;
+                                &lt;body&gt;
+                                &lt;table border="1" cellpadding="10"&gt;
+                                    &lt;tr&gt;
+                                        &lt;td bgcolor="yellow"&gt;Baris 1 kolom 1&lt;/td&gt;
+                                        &lt;td&gt;baris 1 kolom 2&lt;/td&gt;
+                                    &lt;/tr&gt;
+                                    &lt;tr bgcolor="#00ff80"&gt;
+                                        &lt;td&gt;Baris 2 kolom 1&lt;/td&gt;
+                                        &lt;td&gt;baris 2 kolom 2&lt;/td&gt;
+                                    &lt;/tr&gt;
+                                &lt;/table&gt;
+                                &lt;/body&gt;
+                                &lt;/html&gt;
+
+                            </code>
+                        </pre>
+                        <p>Hasilnya:</p>
+                        <table border="1" cellpadding="10">
+                            <tr>
+                                <td bgcolor="yellow">Baris 1 kolom 1</td>
+                                <td>baris 1 kolom 2</td>
+                            </tr>
+                            <tr bgcolor="#00ff80">
+                                <td>Baris 2 kolom 1</td>
+                                <td>baris 2 kolom 2</td>
+                            </tr>
+                        </table>
+                        
+                        <h2 class="section-heading">Menggabungkan Sel Tabel</h2>
+                        <p>Atribut yang digunakan untuk menggabungkan sel tabel adalah rowspan dan colspan:</p>
+                        <ul>
+                            <li>rowspan untuk menggbungkan baris;</li>
+                            <li>colspan untuk menggabungkan kolom.</li>
+                        </ul>
+                        <p>Atribut ini bisa kita berikan kepada tag &lt;tr&gt; atau &lt;th&gt;.</p>
+                        <img src="https://www.petanikode.com/img/html/tabel/rowspan-colspan.png" alt="rowspan-colspan.png">
+                        <p>Contoh:</p>
+                        <pre>
+                            <code data-language="html">
+                                &lt;!DOCTYPE html&gt;
+                                &lt;html lang="en"&gt;
+                                &lt;head&gt;
+                                &lt;meta charset="UTF-8"&gt;
+                                &lt;title>Membuat tabel di HTML&lt;/title&gt;
+                                &lt;/head&gt;
+                                &lt;body&gt;
+                                &lt;table border="1" cellpadding="10"&gt;
+                                    &lt;tr&gt;
+                                        &lt;th rowspan="2" bgcolor="yellow"&gt;Bulan&lt;/th&gt;
+                                        &lt;th colspan="2" bgcolor="#00ff80"&gt;Hasil Panen&lt;/th&gt;
+                                    &lt;/tr&gt;
+                                    &lt;tr&gt;
+                                        &lt;th&gt;Padi&lt;/th&gt;
+                                        &lt;th&gt;Kacang&lt;/th&gt;
+                                    &lt;/tr&gt;
+                                    &lt;tr&gt;
+                                        &lt;td&gt;Januari&lt;/td&gt;
+                                        &lt;td&gt;500 Kg&lt;/td&gt;
+                                        &lt;td&gt;231 Kg&lt;/td&gt;
+                                    &lt;/tr&gt;
+                                    &lt;tr&gt;
+                                        &lt;td&gt;Februari&lt;/td&gt;
+                                        &lt;td&gt;342 Kg&lt;/td&gt;
+                                        &lt;td&gt;423 Kg&lt;/td&gt;
+                                    &lt;/tr&gt;
+                                    &lt;tr&gt;
+                                        &lt;td&gt;Maret&lt;/td&gt;
+                                        &lt;td&gt;432 Kg&lt;/td&gt;
+                                        &lt;td&gt;124 Kg&lt;/td&gt;
+                                    &lt;/tr&gt;
+                                    &lt;tr&gt;
+                                        &lt;td&gt;April&lt;/td&gt;
+                                        &lt;td&gt;453 Kg&lt;/td&gt;
+                                        &lt;td&gt;523 Kg&lt;/td&gt;
+                                    &lt;/tr&gt;
+                                &lt;/table&gt;
+                                &lt;/body&gt;
+                                &lt;/html&gt;
+
+                            </code>
+                        </pre>
+                        <p>Hasilnya:</p>
+                        <table border="1">
+                            <tr>
+                                <th rowspan="2" bgcolor="yellow">Bulan</th>
+                                <th colspan="2" bgcolor="#00ff80">Hasil Panen</th>
+                            </tr>
+                            <tr>
+                                <th>Padi</th>
+                                <th>Kacang</th>
+                            </tr>
+                            <tr>
+                                <td>Januari</td>
+                                <td>500 Kg</td>
+                                <td>231 Kg</td>
+                            </tr>
+                            <tr>
+                                <td>Februari</td>
+                                <td>342 Kg</td>
+                                <td>423 Kg</td>
+                            </tr>
+                            <tr>
+                                <td>Maret</td>
+                                <td>432 Kg</td>
+                                <td>124 Kg</td>
+                            </tr>
+                            <tr>
+                                <td>April</td>
+                                <td>453 Kg</td>
+                                <td>523 Kg</td>
+                            </tr>
+                        </table>
+
+                        
+                        
+                        <h2 class="section-heading">Menyisipkan Elemen yang Lain ke dalam Sel</h2>
+                        <p>Di salam sel &lt;td&gt; dan &lt;th&gt;, kita bisa menyisipkan elemen HTML yang lain, seperti gambar, link, video, list, dsb.</p>
+                        <p>Contoh:</p>
+                        <pre>
+                            <code data-language="html">
+                                &lt;!DOCTYPE html&gt;
+                                &lt;html lang="en"&gt;
+                                &lt;head&gt;
+                                &lt;meta charset="UTF-8"&gt;
+                                &lt;title>Membuat tabel di HTML&lt;/title&gt;
+                                &lt;/head&gt;
+                                &lt;body&gt;
+                                &lt;table border="1" cellpadding="10"&gt;
+                                    &lt;tr>
+                                        &lt;th colspan="3" bgcolor="yellow">Produk Unggulan&lt;/th&gt;
+                                    &lt;/tr&gt;
+                                    &lt;tr&gt;
+                                        &lt;td rowspan="4"&gt;
+                                            &lt;img src="../assets/img/kopi.png" width="200" /&gt;
+                                        &lt;/td&gt;
+                                    &lt;/tr&gt;
+                                    &lt;tr&gt;
+                                        &lt;td>Nama&lt;/td&gt;
+                                        &lt;td>Benih Kode&lt;/td&gt;
+                                    &lt;/tr&gt;
+                                    &lt;tr&gt;
+                                        &lt;td>Harga&lt;/td&gt;
+                                        &lt;td>Rp 192.000&lt;/td&gt;
+                                    &lt;/tr&gt;
+                                    &lt;tr&gt;
+                                        &lt;td>Fitur&lt;/td&gt;
+                                        &lt;td&gt;
+                                            &lt;ul&gt;
+                                                &lt;li>Dilengkapi Dokumentasi&lt;/li&gt;
+                                                &lt;li>Ukuran: 31MB&lt;/li&gt;
+                                                &lt;li>Masa Tanam: 6 Bulan&lt;/li&gt;
+                                                &lt;li>Lisensi: MIT&lt;/li&gt;
+                                            &lt;/ul&gt;
+                                        &lt;/td&gt;
+                                    &lt;/tr&gt;
+                                &lt;/table&gt;
+                                &lt;/body&gt;
+                                &lt;/html&gt;
+
+                            </code>
+                        </pre>
+                        <p>Hasilnya:</p>
+                        <table border="1" cellpadding="10">
+                            <tr>
+                                <th colspan="3" bgcolor="yellow">Produk Unggulan</th>
+                            </tr>
+                            <tr>
+                                <td rowspan="4">
+                                    <img src="../assets/img/kopi.png" width="200" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Nama</td>
+                                <td>Benih Kode</td>
+                            </tr>
+                            <tr>
+                                <td>Harga</td>
+                                <td>Rp 192.000</td>
+                            </tr>
+                            <tr>
+                                <td>Fitur</td>
+                                <td>
+                                    <ul>
+                                        <li>Dilengkapi Dokumentasi</li>
+                                        <li>Ukuran: 31MB</li>
+                                        <li>Masa Tanam: 6 Bulan</li>
+                                        <li>Lisensi: MIT</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                        </table>
+
+                        <p>Sekian tutorial membuat tabel di html, ikuti terus tutorial belajar html lainnya. </p>
+
                     </div>
                 </div>
             </div>
@@ -95,33 +403,33 @@
                     <hr class="my-4" />
                     <!-- Post preview-->
                     <div class="post-preview">
-                        <a href="post/post_1.html">
-                            <h4>5 channel youtube buat kamu yang ingin jago coding</h4>
+                        <a href="post_3.html">
+                            <h4>Belajar HTML Membuat Audio</h4>
                         </a>
                         <p class="post-meta">
                             Posted by
-                            <a href="#!">Sona Setiana</a>
-                            on Juli 28, 2021
+                            <a href="#!">Yohanes Hari </a>
+                            on Agustus 01, 2021
                         </p>
                     </div>
                     <!-- Divider-->
                     <hr class="my-4" />
                     <!-- Post preview-->
                     <div class="post-preview">
-                        <a href="post/post_1.html">
-                            <h4>5 channel youtube buat kamu yang ingin jago coding</h4>
+                        <a href="post_4.html">
+                            <h4>Belajar html membuat video</h4>
                         </a>
                         <p class="post-meta">
                             Posted by
-                            <a href="#!">Sona Setiana</a>
-                            on Juli 28, 2021
+                            <a href="#!">Muhammad Ayun</a>
+                            on Juli 31, 2021
                         </p>
                     </div>
                     <!-- Divider-->
                     <hr class="my-4" />
                     <!-- Post preview-->
                     <div class="post-preview">
-                        <a href="post/post_1.html">
+                        <a href="post_1.html">
                             <h4>5 channel youtube buat kamu yang ingin jago coding</h4>
                         </a>
                         <p class="post-meta">
@@ -148,5 +456,7 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
         <script src="../js/scripts.js"></script>
+        <script src="../js/rainbow.js"></script>
+        <script src="../js/html.js"></script>
     </body>
 </html>
